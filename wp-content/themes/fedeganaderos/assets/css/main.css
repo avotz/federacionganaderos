@@ -864,61 +864,6 @@ textarea {
 .overflow {
   overflow: hidden;
 }
-.btn {
-  border: 1px solid #fff;
-  font-size: inherit;
-  color: #fff;
-  background: 0 0;
-  text-align: center;
-  cursor: pointer;
-  padding: 10px 30px 10px;
-  display: inline-block;
-  text-transform: uppercase;
-  outline: 0;
-  position: relative;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  background-color: transparent;
-}
-.btn:hover {
-  background-color: naranja;
-  color: #fff;
-  border-color: transparent;
-}
-.btn-gris {
-  background-color: #7d95a1;
-  border-color: #7d95a1;
-  padding: 8px 30px 8px;
-}
-.btn-gris:hover {
-  background-color: #000;
-}
-.btn-negro {
-  background-color: #000;
-  border-color: #000;
-  padding: 8px 30px 8px;
-}
-.btn-negro:hover {
-  background-color: #7d95a1;
-}
-.inner {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 4rem;
-}
-@media screen and (min-width: 1170px) {
-  .inner {
-    padding: 0;
-  }
-}
 .search-submit,
 .comment-form .submit,
 .wpcf7-submit,
@@ -1016,6 +961,61 @@ textarea {
 .wpcf7-submit:hover {
   background-color: #0c3ead;
   color: #fff;
+}
+.btn {
+  border: 1px solid #fff;
+  font-size: inherit;
+  color: #fff;
+  background: 0 0;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 30px 10px;
+  display: inline-block;
+  text-transform: uppercase;
+  outline: 0;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  background-color: transparent;
+}
+.btn:hover {
+  background-color: naranja;
+  color: #fff;
+  border-color: transparent;
+}
+.btn-gris {
+  background-color: #7d95a1;
+  border-color: #7d95a1;
+  padding: 8px 30px 8px;
+}
+.btn-gris:hover {
+  background-color: #000;
+}
+.btn-negro {
+  background-color: #000;
+  border-color: #000;
+  padding: 8px 30px 8px;
+}
+.btn-negro:hover {
+  background-color: #7d95a1;
+}
+.inner {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+@media screen and (min-width: 1170px) {
+  .inner {
+    padding: 0;
+  }
 }
 .flex-container-sb {
   display: -webkit-box;
