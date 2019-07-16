@@ -113,7 +113,7 @@ get_header();
 										
 											if(count($products_ids) > 0){ ?>
 												<div class="solution-products solution-media">
-													<div class="solution-products-container flex-container-sb">
+													<div class="solution-products-container flex-container-start">
 												<?php 
 													foreach ($products_ids as $product_id ) :
 
