@@ -245,7 +245,7 @@ textarea
 			display none
 		.cart
 			right: 1.5rem
-			
+	
 .banner
 	height: 82vh
 	position: relative
@@ -254,10 +254,19 @@ textarea
 	background-repeat: no-repeat
 	background-size:cover;
 	background-position: center center
+	&-slider
+		position relative
+		z-index 0
+	&-slide
+		background-size: auto, cover;
+		background-repeat: repeat, no-repeat
+		background-position: center center
+		height: 82vh
+		width: 100%
 	.item
 		height: 82vh
 		&-info
-			position: relative
+			position: absolute
 			z-index: 2
 			//left 3rem
 			
@@ -391,7 +400,7 @@ textarea
 	color: #000
 .solution
 	background-color: verde
-	&:nth-child(2n)
+	&:nth-child(2n+1)
 		background-color: #0c3ead
 		.solution-link{
 			order: 0;
@@ -598,6 +607,12 @@ textarea
 		text-align: center
 	iframe 
 		width: 100%
+.mfp-content
+.entry-content
+	ul
+		margin-left: 45px
+		margin-bottom: 1rem
+		
 .clients
 	padding 2rem 0
 	border-top 1px solid cafe
@@ -685,6 +700,6 @@ textarea
 			width: 60%
 			text-align: left
 			
-		.copy
-			width: 155px
-			line-height: 50px
+		// .copy
+		// 	width: 155px
+		// 	line-height: 50px

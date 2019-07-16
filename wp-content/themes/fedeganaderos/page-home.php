@@ -24,7 +24,11 @@ get_header();
 			</div>
 		</div>
 			
-	  	 
+		<div class="banner-slider">
+				<div class="banner-slide w-full h-screen" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/pattern.png'), url('<?php echo get_template_directory_uri(); ?>/img/bg.jpg')"></div>
+				<div class="banner-slide w-full h-screen" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/pattern.png'), url('<?php echo get_template_directory_uri(); ?>/img/bg2.jpg')"></div>
+				<div class="banner-slide w-full h-screen" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/pattern.png'), url('<?php echo get_template_directory_uri(); ?>/img/bg3.jpg')"></div>
+			</div> 
 			<!-- <div class="banner-video">
 				<video autoplay poster="<?php echo get_template_directory_uri(); ?>/img/bg.jpg" loop>
 					<source src="<?php echo get_template_directory_uri(); ?>/img/video.webm" type="video/webm">
@@ -69,7 +73,7 @@ get_header();
 	</section>
 	<section class="intro" id="products">
 		<div class="inner">
-			<h2 class="text-center">Soluciones</h2>
+			<!-- <h2 class="text-center">Soluciones</h2> -->
 		</div>
 	
 	</section>

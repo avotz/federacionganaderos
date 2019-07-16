@@ -100,6 +100,16 @@
 
        });
  
+ $('.banner-slider').slick({
+        dots: false,
+        autoplay:true,
+        autoplaySpeed:5000,
+        speed: 500,
+        arrows: false,
+        cssEase: 'linear',
+        fade: true,
+        pauseOnHover: false
+    });
 // $(".owl-carousel").owlCarousel({
 //       animateOut: 'fadeOut',
 //       items : 1,

@@ -35,10 +35,13 @@
 						
 					</div>
 				</div>
+				<div class="copy">
+						Federación Ganaderos &copy; 2019. Avotz
+					</div>
 			</div>
 			
 		</div>
-		<div class="footer-bottom">
+		<!-- <div class="footer-bottom">
 			<div class="inner">
 				<div class="footer-bottom-container">
 					<nav class="footer-menu">
@@ -57,13 +60,11 @@
 									
 								</ul>
 						</nav>
-					<div class="copy">
-						FG &copy; 2019. Avotz
-					</div>
+					
 				</div>
 			</div>
 			
-		</div>
+		</div> -->
 	</footer>
 
 <?php wp_footer(); ?>
