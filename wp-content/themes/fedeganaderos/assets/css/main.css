@@ -1136,6 +1136,9 @@ textarea {
   display: inline-block;
   padding: 0 0.5rem;
 }
+.nav-is-open .header-menu {
+  display: block;
+}
 .header {
   background: #fff;
   padding-top: 0.8rem;
@@ -1152,12 +1155,14 @@ textarea {
   vertical-align: middle;
 }
 .header-menu {
+  display: none;
   vertical-align: middle;
   position: absolute;
   background: #7d95a1;
   left: 0;
   right: 0;
   top: 101px;
+  z-index: 100;
 }
 .header-menu li {
   display: block;
@@ -1559,6 +1564,9 @@ h1
   flex-direction: column;
   width: 100%;
   min-height: 245px;
+}
+.solution-products-item-title {
+  color: #fff;
 }
 .solution-products-item-link {
   width: 100%;

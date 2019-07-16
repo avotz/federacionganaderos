@@ -198,6 +198,10 @@ textarea
 			color: white
 			display: inline-block
 			padding: 0 .5rem
+.nav-is-open 
+	.header
+		&-menu
+			display: block
 .header
 	background: white
 	padding-top: .8rem
@@ -212,13 +216,14 @@ textarea
 		//margin-right: 2rem
 		vertical-align: middle
 	&-menu
-		//display: none
+		display: none
 		vertical-align: middle
 		position: absolute
 		background: gris
 		left 0
 		right: 0
 		top 101px
+		z-index: 100
 
 		li
 			display: block
@@ -481,6 +486,8 @@ textarea
 			flex-direction: column;
 			width: 100%//33.333%;
 			min-height: 245px;
+			&-title 
+				color white
 			&-link 
 				width: 100%;
 				display: flex;
