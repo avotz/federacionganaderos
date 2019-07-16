@@ -20,7 +20,7 @@ get_header();
 			<div class="item-info">
 				<h2>Soluciones Completas para fincas ganaderas</h2>
 				<p>Manejo de agua - Técnologia lechera - Insumos - Implementacion de riego</p>
-				<a href="<?php echo esc_url( home_url( '/contactenos' ) ); ?>" class="btn btn-negro">Contáctenos</a>
+				<a href="<?php echo esc_url( home_url( '/contactenos' ) ); ?>" class="btn btn-rojo">Contáctenos</a>
 			</div>
 		</div>
 			

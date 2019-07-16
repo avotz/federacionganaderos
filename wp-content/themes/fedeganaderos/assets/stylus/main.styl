@@ -146,6 +146,13 @@ textarea
 	padding 8px 30px 8px
 	&:hover
 		background-color: gris
+
+.btn-rojo
+	background-color rojo
+	border-color rojo
+	padding 8px 30px 8px
+	&:hover
+		background-color: azul
 	
 .inner
 	max-width 1170px
@@ -408,6 +415,7 @@ textarea
 	text-align: center
 .intro
 	color: #000
+
 .solution
 	background-color: verde
 	&:nth-child(2n+1)
@@ -437,6 +445,12 @@ textarea
 	padding: .5rem 1rem
 	&.black
 		background-color: #22292f
+		color: white
+		&:hover
+			color: #22292f
+			background-color: white
+	&.red
+		background-color: rojo
 		color: white
 		&:hover
 			color: #22292f
@@ -610,6 +624,18 @@ textarea
 		&-products
 			width 60%
 
+@media screen and (max-width: 768px)
+	.solution
+		.container
+			flex-wrap: wrap
+		&-content
+			flex: 0 0 100%
+		&-media
+			width: 100%
+			order: 1 !important;
+			flex: 0 0 100%;
+		
+
 .main
 	padding-top: 2rem
 .page
@@ -640,8 +666,8 @@ textarea
 
 .footer
 	&-top
-		background: cafe
-		color #000
+		background: rojo
+		color white
 		padding: 1.5rem 0
 		&-container
 			display: flex
@@ -652,7 +678,7 @@ textarea
 			margin-bottom: 2rem
 			text-align: center
 		h4 
-			color #000
+			color white
 		.input
 			height: 38px
 			border: 1px solid #a8a69d
@@ -669,7 +695,7 @@ textarea
 			a 
 				display: inline-block
 				padding: .5rem 1rem
-				color #000
+				color white
 				font-size: 1.5rem
 
 	&-bottom
