@@ -1400,7 +1400,7 @@ h1
 .solution:nth-child(2n+1) {
   background-color: #0c3ead;
 }
-.solution:nth-child(2n+1) .solution-link {
+.solution:nth-child(2n+1) .solution-media {
   -webkit-box-ordinal-group: 0;
   -moz-box-ordinal-group: 0;
   -o-box-ordinal-group: 0;
@@ -1415,7 +1415,7 @@ h1
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
 }
-.solution .solution-link {
+.solution .solution-media {
   -webkit-box-ordinal-group: 1;
   -moz-box-ordinal-group: 1;
   -o-box-ordinal-group: 1;

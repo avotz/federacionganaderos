@@ -112,7 +112,7 @@ get_header();
 										<?php  $products_ids = rwmb_meta( 'rw_producto' );
 										
 											if(count($products_ids) > 0){ ?>
-												<div class="solution-products">
+												<div class="solution-products solution-media">
 													<div class="solution-products-container flex-container-sb">
 												<?php 
 													foreach ($products_ids as $product_id ) :
@@ -167,7 +167,7 @@ get_header();
 											</div>
 											<?php }else{?>
 											
-											<a href="<?php echo esc_url( home_url( '/contactenos' ) ); ?>" class="solution-link">
+											<a href="<?php echo esc_url( home_url( '/contactenos' ) ); ?>" class="solution-link solution-media">
 												<div class="solution-img">
 												<?php if (has_post_thumbnail()) :
 
