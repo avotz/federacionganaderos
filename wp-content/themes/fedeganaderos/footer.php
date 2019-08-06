@@ -18,7 +18,8 @@
 				<div class="footer-top-container">
 					<div class="footer-top-item">
 						<h4>Servicio de atención al cliente:</h4>
-						<p>(506) 1234 546 12 - (506) 1234 546 12</p>
+						<p>(506) 2666 1220 - (506) 2666 0178</p>
+						<p>info@fcggproveeduria.com</p>
 					</div>
 					<div class="footer-top-item">
 						<h4>Contácte un asesor</h4>
