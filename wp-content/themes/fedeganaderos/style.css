@@ -6145,6 +6145,10 @@ h1
 .solution-content h2 {
   color: #fff;
 }
+.solution-content ul {
+  margin-left: 45px;
+  margin-bottom: 1rem;
+}
 .btn-discover {
   display: inline-block;
   background-color: #fff;
