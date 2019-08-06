@@ -1150,7 +1150,7 @@ textarea {
   position: relative;
 }
 .header-logo {
-  width: 80px;
+  width: 210px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -1244,16 +1244,17 @@ textarea {
 .banner .item-info {
   position: absolute;
   z-index: 2;
-  -webkit-transform: translate(0, 50%);
-  -moz-transform: translate(0, 50%);
-  -o-transform: translate(0, 50%);
-  -ms-transform: translate(0, 50%);
-  transform: translate(0, 50%);
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
   color: #fff;
-h1
 }
 .banner .item-info h2 {
   font-size: 2rem;
+  line-height: 2.5rem;
   color: #fff;
   margin-bottom: 1rem;
 }
@@ -1296,11 +1297,12 @@ h1
 }
 @media screen and (min-width: 768px) {
   .banner .item-info {
-    -webkit-transform: translate(0, 150%);
-    -moz-transform: translate(0, 150%);
-    -o-transform: translate(0, 150%);
-    -ms-transform: translate(0, 150%);
-    transform: translate(0, 150%);
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
 h1
   }
   .banner .item-info h2 {
@@ -1446,6 +1448,10 @@ h1
 }
 .intro {
   color: #000;
+  margin-top: 1.5rem;
+}
+.intro h2 {
+  font-size: 2.5rem;
 }
 .solution {
   background-color: #009f15;

@@ -16,18 +16,42 @@ get_header();
 ?>
 <section class="banner">
 		
-		<div class="inner">
+		<!-- <div class="inner">
 			<div class="item-info">
 				<h2>Soluciones Completas para fincas ganaderas</h2>
 				<p>Manejo de agua - Técnologia lechera - Insumos - Implementacion de riego</p>
 				<a href="<?php echo esc_url( home_url( '/contactenos' ) ); ?>" class="btn btn-rojo">Contáctenos</a>
 			</div>
-		</div>
+		</div> -->
 			
 		<div class="banner-slider">
-				<div class="banner-slide w-full h-screen" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/pattern.png'), url('<?php echo get_template_directory_uri(); ?>/img/bg.jpg')"></div>
-				<div class="banner-slide w-full h-screen" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/pattern.png'), url('<?php echo get_template_directory_uri(); ?>/img/bg2.jpg')"></div>
-				<div class="banner-slide w-full h-screen" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/pattern.png'), url('<?php echo get_template_directory_uri(); ?>/img/bg3.jpg')"></div>
+				<div class="banner-slide w-full h-screen" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/pattern.png'), url('<?php echo get_template_directory_uri(); ?>/img/bg.jpg')">
+					<div class="inner">
+						<div class="item-info">
+							<h2>Soluciones Completas para fincas ganaderas</h2>
+							
+							<a href="<?php echo esc_url( home_url( '/contactenos' ) ); ?>" class="btn btn-rojo">Contáctenos</a>
+						</div>
+					</div>
+				</div>
+				<div class="banner-slide w-full h-screen" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/pattern.png'), url('<?php echo get_template_directory_uri(); ?>/img/bg2.jpg')">
+					<div class="inner">
+						<div class="item-info">
+							<h2>Manejo de agua - Técnologia lechera - Equipo e Insumos - Implementacion de riego</h2>
+							
+							<a href="<?php echo esc_url( home_url( '/contactenos' ) ); ?>" class="btn btn-rojo">Contáctenos</a>
+						</div>
+					</div>
+				</div>
+				<div class="banner-slide w-full h-screen" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/pattern.png'), url('<?php echo get_template_directory_uri(); ?>/img/bg3.jpg')">
+				<div class="inner">
+						<div class="item-info">
+							<h2>Tecnología de adaptación al cambio climático</h2>
+							
+							<a href="<?php echo esc_url( home_url( '/contactenos' ) ); ?>" class="btn btn-rojo">Contáctenos</a>
+						</div>
+					</div>
+				</div>
 			</div> 
 			<!-- <div class="banner-video">
 				<video autoplay poster="<?php echo get_template_directory_uri(); ?>/img/bg.jpg" loop>
@@ -41,7 +65,7 @@ get_header();
 				
 		  	  	
 	</section>
-	<section class="home-categories">
+	<!-- <section class="home-categories">
 		<div class="inner">
 			<div class="home-categories-container">
 				<div class="home-categories-item">
@@ -70,10 +94,10 @@ get_header();
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<section class="intro" id="products">
 		<div class="inner">
-			<!-- <h2 class="text-center">Soluciones</h2> -->
+			<h2 class="text-center">Productos y Servicios</h2>
 		</div>
 	
 	</section>
@@ -213,285 +237,6 @@ get_header();
                     ?>
 	
 
-	<!-- <section class="solution text-white px-10">
-		<div class="flex container mx-auto items-center">
-			<a href="#" class="solution-link">
-				<div class="solution-img">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/promo.jpg">
-				</div>
-			</a>
-			<div class="solution-content text-center mx-auto">
-				<h2 class="text-3xl leading-none mb-4 uppercase">Soluciones para riego</h2>
-				<p class="leading-normal mb-4">Ofrecemos toda la gama de Sistemas de Riego para todo tipo de cultivos, por gravedad con tubería de compuertas, por aspersión fija, móvil o semi móvil; y sistemas de bajo volumen, micro-aspersión y goteo. 
-				Brindamos un servicio llave en mano que incluye diseño, instalación personalizada con todos los materiales necesarios para una correcta instalación.
-				Todos nuestros productos son fabricados bajo las tecnologías mas avanzadas lo cual le otorgan en sello de calidad- ISO.
-				</p>
-				<p>
-					<a href="#" class="btn-discover inline-block px-4 py-3 uppercase bg-white font-bold hover:bg-black hover:text-white ">Más información</a>
-				</p>
-			</div>
-		</div>
-	</section> -->
-
-	<!-- <section class="solution text-white px-10">
-		<div class="flex container mx-auto items-center">
-			<div class="solution-products">
-				<div class="solution-products-container flex-container-sb">
-                      
-					
- 
-					<div class="solution-products-item">
-							 <a href="#solution-products-popup-1" class="solution-products-item-link solution-products-popup-link">
-							  
-										
-							  <div class="solution-products-item-bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/product.jpg')"></div>
-										 
-											 
-							  
-							  
-							   <div class="solution-products-item-border">
-								 <div class="solution-products-item-border-left"></div>
-								 <div class="solution-products-item-border-right"></div>
-								 <div class="solution-products-item-content">
-								   <h3 class="solution-products-item-title">Lorem ipsum dolor sit amet.</h3>
-								   <p class="solution-products-item-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-								 </div>
-							   </div>
-							 </a>
-							 <div id="solution-products-popup-1" class="solution-popup white-popup mfp-hide mfp-with-anim">
-								 <h3 class="popup-title"><?php the_title(); ?></h3>
-								 <div class="popup-thumbnail">
-								   <?php /*the_post_thumbnail('home-item-large');*/ ?>
-								 </div>
-								 <?php /*the_content()*/ ?>
-								   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere fugiat excepturi tenetur quos repudiandae cupiditate quis officiis placeat aspernatur esse dolore aperiam magnam voluptas, eos vel nostrum recusandae. Sequi.
-								 
- 
-							   </div>
-							
- 
- 
-					</div>
-					<div class="solution-products-item">
-							 <a href="#solution-products-popup-1" class="solution-products-item-link solution-products-popup-link">
-							  
-										
-							  <div class="solution-products-item-bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/product.jpg')"></div>
-										 
-											 
-							  
-							  
-							   <div class="solution-products-item-border">
-								 <div class="solution-products-item-border-left"></div>
-								 <div class="solution-products-item-border-right"></div>
-								 <div class="solution-products-item-content">
-								   <h3 class="solution-products-item-title">Lorem ipsum dolor sit amet.</h3>
-								   <p class="solution-products-item-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-								 </div>
-							   </div>
-							 </a>
-							 <div id="solution-products-popup-1" class="solution-popup white-popup mfp-hide mfp-with-anim">
-								 <h3 class="popup-title"><?php the_title(); ?></h3>
-								 <div class="popup-thumbnail">
-								   <?php /*the_post_thumbnail('home-item-large');*/ ?>
-								 </div>
-								 <?php /*the_content()*/ ?>
-								   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere fugiat excepturi tenetur quos repudiandae cupiditate quis officiis placeat aspernatur esse dolore aperiam magnam voluptas, eos vel nostrum recusandae. Sequi.
-								 
- 
-							   </div>
-							
- 
- 
-					</div>
-					<div class="solution-products-item">
-							 <a href="#solution-products-popup-1" class="solution-products-item-link solution-products-popup-link">
-							  
-										
-							  <div class="solution-products-item-bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/product.jpg')"></div>
-										 
-											 
-							  
-							  
-							   <div class="solution-products-item-border">
-								 <div class="solution-products-item-border-left"></div>
-								 <div class="solution-products-item-border-right"></div>
-								 <div class="solution-products-item-content">
-								   <h3 class="solution-products-item-title">Lorem ipsum dolor sit amet.</h3>
-								   <p class="solution-products-item-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-								 </div>
-							   </div>
-							 </a>
-							 <div id="solution-products-popup-1" class="solution-popup white-popup mfp-hide mfp-with-anim">
-								 <h3 class="popup-title"><?php the_title(); ?></h3>
-								 <div class="popup-thumbnail">
-								   <?php /*the_post_thumbnail('home-item-large');*/ ?>
-								 </div>
-								 <?php /*the_content()*/ ?>
-								   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere fugiat excepturi tenetur quos repudiandae cupiditate quis officiis placeat aspernatur esse dolore aperiam magnam voluptas, eos vel nostrum recusandae. Sequi.
-								 
- 
-							   </div>
-							
- 
- 
-					</div>
-					<div class="solution-products-item">
-							 <a href="#solution-products-popup-1" class="solution-products-item-link solution-products-popup-link">
-							  
-										
-							  <div class="solution-products-item-bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/product.jpg')"></div>
-										 
-											 
-							  
-							  
-							   <div class="solution-products-item-border">
-								 <div class="solution-products-item-border-left"></div>
-								 <div class="solution-products-item-border-right"></div>
-								 <div class="solution-products-item-content">
-								   <h3 class="solution-products-item-title">Lorem ipsum dolor sit amet.</h3>
-								   <p class="solution-products-item-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-								 </div>
-							   </div>
-							 </a>
-							 <div id="solution-products-popup-1" class="solution-popup white-popup mfp-hide mfp-with-anim">
-								 <h3 class="popup-title"><?php the_title(); ?></h3>
-								 <div class="popup-thumbnail">
-								   <?php /*the_post_thumbnail('home-item-large');*/ ?>
-								 </div>
-								 <?php /*the_content()*/ ?>
-								   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere fugiat excepturi tenetur quos repudiandae cupiditate quis officiis placeat aspernatur esse dolore aperiam magnam voluptas, eos vel nostrum recusandae. Sequi.
-								 
- 
-							   </div>
-							
- 
- 
-					</div>
-					<div class="solution-products-item">
-							 <a href="#solution-products-popup-1" class="solution-products-item-link solution-products-popup-link">
-							  
-										
-							  <div class="solution-products-item-bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/product.jpg')"></div>
-										 
-											 
-							  
-							  
-							   <div class="solution-products-item-border">
-								 <div class="solution-products-item-border-left"></div>
-								 <div class="solution-products-item-border-right"></div>
-								 <div class="solution-products-item-content">
-								   <h3 class="solution-products-item-title">Lorem ipsum dolor sit amet.</h3>
-								   <p class="solution-products-item-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-								 </div>
-							   </div>
-							 </a>
-							 <div id="solution-products-popup-1" class="solution-popup white-popup mfp-hide mfp-with-anim">
-								 <h3 class="popup-title"><?php the_title(); ?></h3>
-								 <div class="popup-thumbnail">
-								   <?php /*the_post_thumbnail('home-item-large');*/ ?>
-								 </div>
-								 <?php /*the_content()*/ ?>
-								   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere fugiat excepturi tenetur quos repudiandae cupiditate quis officiis placeat aspernatur esse dolore aperiam magnam voluptas, eos vel nostrum recusandae. Sequi.
-								 
- 
-							   </div>
-							
- 
- 
-					</div>
-					<div class="solution-products-item">
-							 <a href="#solution-products-popup-1" class="solution-products-item-link solution-products-popup-link">
-							  
-										
-							  <div class="solution-products-item-bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/product.jpg')"></div>
-										 
-											 
-							  
-							  
-							   <div class="solution-products-item-border">
-								 <div class="solution-products-item-border-left"></div>
-								 <div class="solution-products-item-border-right"></div>
-								 <div class="solution-products-item-content">
-								   <h3 class="solution-products-item-title">Lorem ipsum dolor sit amet.</h3>
-								   <p class="solution-products-item-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-								 </div>
-							   </div>
-							 </a>
-							 <div id="solution-products-popup-1" class="solution-popup white-popup mfp-hide mfp-with-anim">
-								 <h3 class="popup-title"><?php the_title(); ?></h3>
-								 <div class="popup-thumbnail">
-								   <?php /*the_post_thumbnail('home-item-large');*/ ?>
-								 </div>
-								 <?php /*the_content()*/ ?>
-								   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere fugiat excepturi tenetur quos repudiandae cupiditate quis officiis placeat aspernatur esse dolore aperiam magnam voluptas, eos vel nostrum recusandae. Sequi.
-								 
- 
-							   </div>
-							
- 
- 
-					</div>
-							
- 
-						 
-						 
-						
- 
- 
-					   
-					</div>
-			</div>
-			
-			<div class="solution-content text-center mx-auto">
-				<h2 class="text-3xl leading-none mb-4 uppercase">Soluciones para manejo de agua</h2>
-				<p class="leading-normal mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco</p>
-				<p>
-					<a href="#" class="btn-discover inline-block px-4 py-3 uppercase bg-white font-bold hover:bg-black hover:text-white ">Discover</a>
-				</p>
-			</div>
-		</div>
-	</section>
-	<section class="solution text-white px-10">
-		<div class="flex container mx-auto items-center">
-			<a href="#" class="solution-link">
-				<div class="solution-img">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/promo.jpg">
-				</div>
-			</a>
-			<div class="solution-content text-center mx-auto">
-				<h2 class="text-3xl leading-none mb-4 uppercase">Suministro de productos e insumos</h2>
-				<p class="leading-normal mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco</p>
-				<p>
-					<a href="#" class="btn-discover inline-block px-4 py-3 uppercase bg-white font-bold hover:bg-black hover:text-white ">Más información</a>
-				</p>
-			</div>
-		</div>
-	</section>
-	<section class="solution text-white px-10">
-		<div class="flex container mx-auto items-center">
-			<a href="#" class="solution-link">
-				<div class="solution-img">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/promo.jpg">
-				</div>
-			</a>
-			<div class="solution-content text-center mx-auto">
-				<h2 class="text-3xl leading-none mb-4 uppercase">Servicios de maquinaria</h2>
-				<p class="leading-normal mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco</p>
-				<p>
-					<a href="#" class="btn-discover inline-block px-4 py-3 uppercase bg-white font-bold hover:bg-black hover:text-white ">Más información</a>
-				</p>
-			</div>
-		</div>
-	</section> -->
-
-	
 
 	
 	
