@@ -6148,6 +6148,7 @@ h1
 .solution-content ul {
   margin-left: 45px;
   margin-bottom: 1rem;
+  text-align: left;
 }
 .btn-discover {
   display: inline-block;
