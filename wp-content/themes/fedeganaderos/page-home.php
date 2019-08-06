@@ -219,7 +219,7 @@ get_header();
 										<h2 class="text-3xl leading-none mb-4 uppercase"><?php the_title(); ?></h2>
 										<p class="leading-normal mb-4"><?php the_content(); ?></p>
 										<p>
-										<?php if ($post->slug == 'financiamiento') : ?>
+										<?php if ($post->post_name == 'financiamiento') : ?>
 											<a href="<?php echo esc_url( home_url( '/financiamiento' ) ); ?>" class="btn-discover inline-block px-4 py-3 uppercase bg-white font-bold hover:bg-black hover:text-white ">Más información</a>
 										<?php else: ?>
 											<a href="<?php echo esc_url( home_url( '/contactenos' ) ); ?>" class="btn-discover inline-block px-4 py-3 uppercase bg-white font-bold hover:bg-black hover:text-white ">Más información</a>
