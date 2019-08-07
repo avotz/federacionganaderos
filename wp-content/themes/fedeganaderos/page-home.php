@@ -134,20 +134,32 @@ get_header();
 							<section class="solution text-white px-10">
 								<div class="flex container mx-auto items-center">
 										<?php  $products_ids = rwmb_meta( 'rw_producto' );
-										
-											if(count($products_ids) > 0){ ?>
+											
+											
+											if(count($products_ids) > 0){ 
+
+												$query = new WP_Query( array(
+													'post_type' => 'producto',
+													'orderby' => array('menu_order' => 'ASC', 'title' => 'ASC'),
+													
+													'post__in' => $products_ids,
+												) );
+												if ( $query->have_posts() ) {
+													
+												
+												?>
 												<div class="solution-products solution-media">
 													<div class="solution-products-container ">
 												<?php 
-													foreach ($products_ids as $product_id ) :
-
-													$id = get_post_thumbnail_id($product_id);
+													while ( $query->have_posts() ) : $query->the_post();
+													
+													$id = get_post_thumbnail_id($post->ID);
 													$thumb_url = wp_get_attachment_image_src($id, 'producto-thumb', true);
 												
 												?>
 
 													<div class="solution-products-item">
-															<a href="#solution-products-popup-<?= $product_id ?>" class="solution-products-item-link solution-products-popup-link">
+															<a href="#solution-products-popup-<?= $post->ID ?>" class="solution-products-item-link solution-products-popup-link">
 															
 																		
 															<div class="solution-products-item-bg" style="background-image: url('<?= $thumb_url[0] ?>')"></div>
@@ -159,22 +171,23 @@ get_header();
 																<div class="solution-products-item-border-left"></div>
 																<div class="solution-products-item-border-right"></div>
 																<div class="solution-products-item-content">
-																<h3 class="solution-products-item-title"><?php echo get_the_title($product_id ) ?></h3>
+																<h3 class="solution-products-item-title"><?php the_title(); ?></h3>
 																<!-- <p class="solution-products-item-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p> -->
 																</div>
 															</div>
 															</a>
-															<div id="solution-products-popup-<?= $product_id ?>" class="solution-popup white-popup mfp-hide mfp-with-anim">
+															<div id="solution-products-popup-<?= $post->ID ?>" class="solution-popup white-popup mfp-hide mfp-with-anim">
 																<h3 class="popup-title"><?php the_title(); ?></h3>
 																<div class="popup-thumbnail">
 																<?php the_post_thumbnail('home-item-large'); ?>
 																</div><!-- .post-thumbnail -->
 																<?php 
-																	$content_post = get_post($product_id);
+																	the_content();
+																	/*$content_post = get_post($product_id);
 																	$content = $content_post->post_content;
 																	$content = apply_filters('the_content', $content);
 																	$content = str_replace(']]>', ']]&gt;', $content);
-																	echo $content;
+																	echo $content;*/
 																?>
 															
 																
@@ -186,10 +199,17 @@ get_header();
 													</div>
 												
 													
-												<?php endforeach; ?>
+												<?php 
+													endwhile; 
+													wp_reset_postdata();
+												?>
+												
 												</div>
+											
 											</div>
-											<?php }else{?>
+										<?php } 
+											
+											}else{?>
 											
 											<a href="<?php echo esc_url( home_url( '/contactenos' ) ); ?>" class="solution-link solution-media">
 												<div class="solution-img">
@@ -236,6 +256,7 @@ get_header();
 
                         $index++;
 					endwhile;
+					wp_reset_postdata();
 				endif;
 
                     ?>
