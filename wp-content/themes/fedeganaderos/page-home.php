@@ -178,9 +178,9 @@ get_header();
 															</a>
 															<div id="solution-products-popup-<?= $post->ID ?>" class="solution-popup white-popup mfp-hide mfp-with-anim">
 																<h3 class="popup-title"><?php the_title(); ?></h3>
-																<div class="popup-thumbnail">
-																<?php the_post_thumbnail('home-item-large'); ?>
-																</div><!-- .post-thumbnail -->
+																<!-- <div class="popup-thumbnail">
+																<?php /*the_post_thumbnail('home-item-large');*/ ?>
+																</div> -->
 																<?php 
 																	the_content();
 																	/*$content_post = get_post($product_id);
