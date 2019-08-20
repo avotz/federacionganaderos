@@ -33,6 +33,12 @@ function fedeganaderos_meta_box($meta_boxes)
                     'posts_per_page' => -1,
                 ),
             ),
+            array(
+                'id' => $prefix . 'url_video_solution',
+                'name' => esc_html__('Video Url', 'fedeganaderos'),
+                'type' => 'text',
+                
+            ),
 
         ),
     );

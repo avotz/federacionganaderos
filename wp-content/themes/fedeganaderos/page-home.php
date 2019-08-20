@@ -29,7 +29,7 @@ get_header();
 					<div class="inner">
 						<div class="item-info">
 							<h2>Soluciones Completas para fincas ganaderas</h2>
-							
+							<p>NUESTRO COMPROMISO: LLEVAR TECNOLOGÍAS Y SERVICIOS A LAS CÁMARAS  CON TOTAL ACOMPAÑAMIENTO</p>
 							<a href="<?php echo esc_url( home_url( '/contactenos' ) ); ?>" class="btn btn-rojo">Contáctenos</a>
 						</div>
 					</div>
@@ -65,36 +65,7 @@ get_header();
 				
 		  	  	
 	</section>
-	<!-- <section class="home-categories">
-		<div class="inner">
-			<div class="home-categories-container">
-				<div class="home-categories-item">
-					<figure class="home-categories-item-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/products.jpg" alt="">
-					</figure>
-					<h3>Productos</h3>
-					<span class="icon"><i class="fas fa-arrow-right"></i></span>
-					<a href="#products" class="home-categories-item-link anchor"></a>
-				</div>
-				<div class="home-categories-item">
-					<figure class="home-categories-item-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/repuestos.jpg" alt="">
-					</figure>
-					<h3>Repuestos</h3>
-					<span class="icon"><i class="fas fa-arrow-right"></i></span>
-					<a href="#" class="home-categories-item-link"></a>
-				</div>
-				<div class="home-categories-item">
-					<figure class="home-categories-item-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/financiamiento.jpg" alt="">
-					</figure>
-					<h3>Financiamiento</h3>
-					<span class="icon"><i class="fas fa-arrow-right"></i></span>
-					<a href="<?php echo esc_url( home_url( '/financiamiento' ) ); ?>" class="home-categories-item-link"></a>
-				</div>
-			</div>
-		</div>
-	</section> -->
+	
 	<section class="intro" id="products">
 		<div class="inner">
 			<h2 class="text-center">Productos y Servicios</h2>
@@ -210,8 +181,11 @@ get_header();
 										<?php } 
 											
 											}else{?>
-											
-											<a href="<?php echo esc_url( home_url( '/contactenos' ) ); ?>" class="solution-link solution-media">
+											<?php if( rwmb_meta( 'rw_url_video_solution' ) ) : ?>
+												<a href="<?php  echo rwmb_meta( 'rw_url_video_solution' ) ?>" class="solution-link solution-media popup-video">
+											<?php else : ?>
+												<a href="<?php echo esc_url( home_url( '/contactenos' ) ); ?>" class="solution-link solution-media">
+											<?php endif ?>
 												<div class="solution-img">
 												<?php if (has_post_thumbnail()) :
 

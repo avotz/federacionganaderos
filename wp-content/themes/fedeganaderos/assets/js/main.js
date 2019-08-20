@@ -179,6 +179,38 @@
 
 });
 
+$('body').on('click', '.popup-video', function (e) {
+  e.preventDefault();
+
+  $(this).magnificPopup({
+      disableOn: 700,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+      iframe: {
+          patterns: {
+              youtube: {
+                  index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+                  id: 'v=', // String that splits URL in a two parts, second part should be %id%
+                  // Or null - full URL will be returned
+                  // Or a function that should return %id%, for example:
+                  // id: function(url) { return 'parsed id'; }
+
+                  src: '//www.youtube.com/embed/%id%?autoplay=1&rel=0&showinfo=0' // URL that will be set as a source for iframe.
+              },
+
+
+          },
+
+
+      },
+      fixedContentPos: false
+  }).magnificPopup('open');
+
+});
+
  // SMOOTH ANCHOR SCROLLING
     var $root = jQuery('html, body');
     jQuery('a.anchor').click(function(e) {
